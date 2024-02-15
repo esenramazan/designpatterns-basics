@@ -1,0 +1,13 @@
+Java’da bir thread, bir programın aynı anda birden fazla işlem yapabilmesini sağlayan bir programlama kavramıdır.
+Thread’ler, bir programın daha verimli çalışmasını sağlar çünkü birden fazla işlemi aynı anda gerçekleştirebilir.
+Bu, karmaşık görevlerin ana programı kesintiye uğratmadan arka planda gerçekleştirilmesine olanak sağlar.
+
+Thread’ler, hafif bir alt işlem olarak tanımlanabilir ve ayrı bir yürütme yoluna sahiptir.
+Bu thread’ler aynı belleği kullanır ancak bağımsız hareket ederler, bu nedenle bir thread’deki bir istisna,
+ diğer thread’lerin çalışmasını etkilemez.
+
+Özetle, bir thread, bir işlemcinin aynı anda birden fazla işlem yapabilmesini sağlayan bir programlama kavramıdır.
+Bu, bir programın daha verimli çalışmasını sağlar ve karmaşık görevlerin ana programı kesintiye uğratmadan arka planda gerçekleştirilmesine
+ olanak sağlar. Thread’ler, hafif bir alt işlem olarak tanımlanabilir ve ayrı bir yürütme yoluna sahiptir.
+ Bu thread’ler aynı belleği kullanır ancak bağımsız hareket ederler, bu nedenle bir thread’deki bir istisna,
+ diğer thread’lerin çalışmasını etkilemez. Bu özellikler, thread’lerin çok çeşitli uygulamalar için kullanılmasını sağlar.

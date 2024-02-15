@@ -1,0 +1,25 @@
+SOLID, yazılım geliştirme ve özellikle nesne yönelimli programlama (OOP) alanında önemli bir rol oynayan bir dizi tasarım prensibidir.
+Bu prensipler, Robert C. Martin tarafından öne sürülmüş ve Michael Feathers tarafından kısaltılmıştır.
+SOLID prensipleri, yazılımın esnek, sürdürülebilir, okunabilir ve yeniden kullanılabilir olmasını sağlamak için geliştirilmiştir.
+
+İşte SOLID prensipleri:
+
+1-)Single-responsibility principle (SRP): Bir sınıf (nesne) yalnızca bir amaç uğruna değiştirilebilir, o da o sınıfa yüklenen sorumluluktur.
+
+2-)Open-closed principle (OCP): Bir sınıf ya da fonksiyon halihazırda var olan özellikleri korumalı ve değişikliğe izin vermemelidir.
+
+3-)Liskov substitution principle (LSP): Kodlarımızda herhangi bir değişiklik yapmaya gerek duymadan alt sınıfları,
+türedikleri (üst) sınıfların yerine kullanabilmeliyiz.
+
+
+4-)Interface segregation principle (ISP): Sorumlulukların hepsini tek bir arayüze toplamak yerine daha özelleştirilmiş birden fazla arayüz oluşturmalıyız.
+
+
+5-)Dependency Inversion Principle (DIP): Sınıflar arası bağımlılıklar olabildiğince az olmalıdır,
+özellikle üst seviye sınıflar alt seviye sınıflara bağımlı olmamalıdır.
+
+
+Bu prensipler, yazılımın gelecekteki gereksinimlere kolayca adapte olabilmesi,
+yeni özelliklerin kodda bir değişikliğe gerek kalmadan kolayca eklenmesi,
+yeni gereksinimlere karşın kodun üzerinde en az değişimi sağlaması
+ve kod üzerinde sürekli düzeltme hatta yeniden yazma gibi sorunların yol açtığı zaman kaybını minimuma indirmek için tasarlanmıştır

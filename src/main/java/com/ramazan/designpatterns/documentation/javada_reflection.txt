@@ -1,0 +1,33 @@
+Java’da reflection, çalışma zamanında (runtime) bir uygulamanın davranışını incelemek ve bu davranışları yönetmek için kullanılan bir özelliktir. Bu, Java Sanal Makinesi’nde (Java Virtual Machine, JVM) çalışan uygulamaların davranışlarını incelemek ve bu davranışlara yön verme imkanı sağlar12.
+
+Reflection, sınıfların, metodların, interfacelerin, fieldların ve diğer özelliklerin programımız çalışır haldeyken isimlerini bilmesek bile incelememize ve değiştirmemize yarayan bir Java özelliğidir.
+
+Örneğin, bir sınıfın adını, üst sınıfını, uyguladığı arayüzleri, içerdiği metotları ve alanları, ve daha fazlasını elde etmek için reflection kullanabiliriz. Ayrıca, reflection ile bir sınıfın metotlarını çağırabilir, alanlarını değiştirebilir ve hatta yeni bir nesne oluşturabiliriz.
+
+Bir örnek üzerinden gidelim:
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Class<?> stringClass = String.class;
+
+        System.out.println("Class name: " + stringClass.getName());
+        System.out.println("Simple name: " + stringClass.getSimpleName());
+        System.out.println("Package: " + stringClass.getPackage());
+
+        Method[] methods = stringClass.getMethods();
+        System.out.println("Method count: " + methods.length);
+
+        for (Method method : methods) {
+            System.out.println(method.getName() + " " + method.getParameterCount());
+        }
+    }
+}
+
+Bu kod parçası, String sınıfının adını, basit adını, paketini ve metotlarını yazdırır. Bu, reflection’ın gücünü gösteren basit bir örnektir.
+
+Spring çerçevesi, reflection’ı geniş bir şekilde kullanır. Özellikle, Spring, bean’leri oluşturmak ve yönetmek için reflection kullanır. Spring, sınıf isimlerini, metotları, alanları ve daha fazlasını elde etmek için reflection kullanır. Ayrıca, Spring, reflection’ı kullanarak metotları çağırır ve alanları değiştirir.
+
+Örneğin, Spring, bir sınıfın üzerindeki @Component veya @Service gibi annotation’ları okumak için reflection kullanır4. Bu annotation’lar, Spring’in bir sınıfı bir bean olarak yönetmesi gerektiğini belirtir. Spring, bu annotation’ları okumak ve ilgili sınıfı bir bean olarak kaydetmek için reflection kullanır.
+
+
+

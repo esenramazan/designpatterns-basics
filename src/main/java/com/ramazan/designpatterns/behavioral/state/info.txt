@@ -1,0 +1,23 @@
+State Pattern, bir nesnenin iç durumuna bağlı olarak davranışını değiştirmesini sağlar.
+Bu, nesnenin sınıfını değiştirmeden davranışını değiştirmesine olanak sağlar.
+İşte Java ve Spring Boot’ta State Pattern’in kullanıldığı bazı durumlar:
+
+Java’da State Pattern Kullanımı:
+
+***Durum Değişiklikleri: Bir nesnenin durumuna bağlı olarak farklı davranışlar sergilemesi gerektiğinde State Pattern kullanılır.
+ Örneğin, bir paketin posta ofisine gönderilmesi, teslim edilmesi ve sonunda bir müşteri tarafından alınması durumlarında,
+ paketin teslim durumunu yazdırmak isteyebiliriz.
+
+***Kod Temizliği: State Pattern, kodun daha temiz kalmasını sağlar.
+Durumları temsil eden ayrı sınıflar oluşturarak, çok sayıda if/else ifadesi kullanmaktan kaçınılabilir.
+
+***Dinamik Davranış Değişiklikleri: State Pattern, bir nesnenin davranışını dinamik olarak değiştirmesine olanak sağlar.
+Örneğin, bir televizyon uzaktan kumandası düşünün. Uzaktan kumanda, televizyonun açık veya kapalı olmasına bağlı olarak farklı davranır.
+
+Spring Boot’ta State Pattern Kullanımı:
+
+Durum Yönetimi: Spring Boot uygulamalarında, belirli bir iş akışının farklı aşamalarını temsil eden durumları yönetmek için State Pattern kullanılabilir.
+
+SOLID Prensipleri: State Pattern, SOLID tasarım prensiplerinin bir parçası olan Açık/Kapalı Prensibi ve Tek Sorumluluk Prensibini uygular.
+Bu, bir nesnenin iç durumu değiştiğinde davranışını değiştirmesine olanak sağlar.
+Bu örnekler, State Pattern’in genel kullanımını gösterir. Ancak, bu modelin kullanımı, uygulamanın gereksinimlerine ve karmaşıklığına bağlı olarak değişebilir. Bu nedenle, State Pattern’i kullanırken uygulamanın ihtiyaçlarını dikkate almak önemlidir.

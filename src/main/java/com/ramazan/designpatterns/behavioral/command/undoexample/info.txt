@@ -1,0 +1,4 @@
+Bu örnekte, Command arayüzü Command’ı, InsertCommand sınıfı Concrete Command’ı,
+Document sınıfı Receiver’ı, ve CommandManager sınıfı Invoker’ı temsil eder.
+İstemci kodu, belirli bir Command’ı yürütmek veya geri almak için CommandManager’ı kullanır.
+Bu sayede, işlemlerin geri alınabilirliği sağlanmış olur.

@@ -1,0 +1,17 @@
+Java’da thread’lerin (iş parçacıklarının) kullanımını öğrenmek için aşağıdaki başlıkları takip edebilirsiniz:
+
+1-) Thread Nedir?: İşlemcinin aynı anda birden fazla işlem yapabilmesini sağlayan bir programlama kavramıdır.
+
+2-) Thread Oluşturma: Java’da iki şekilde thread oluşturabilirsiniz: Thread sınıfını genişleterek veya Runnable arayüzünü uygulayarak.
+
+3-)Thread Çalıştırma: Thread’leri start() metodunu çağırarak çalıştırabilirsiniz.
+
+4-)Thread Türleri: Uygulamada iki tür thread vardır: kullanıcı thread’i ve daemon thread’i.
+
+5-) Thread Önceliği: Oluşturduğunuz her thread’e bir öncelik atayabilirsiniz.
+
+6-) Eşzamanlılık Sorunları: Thread’lerin aynı anda çalışması ve aynı değişkenlere erişmesi sonucunda ortaya çıkan sorunlara eşzamanlılık
+ sorunları denir.
+
+7-)Eşzamanlılık Sorunlarını Çözme: Eşzamanlılık sorunlarını çözmek için thread’ler arasında mümkün olduğunca az özellik paylaşılmalıdır.
+

@@ -1,0 +1,8 @@
+Bridge Pattern, bir sınıfı iki parçaya ayırarak - soyutlama ve uygulama - her ikisinin de bağımsız olarak evrimleşebilmesini sağlar.
+Bu, bir köprü arayüzü oluşturarak OOP prensiplerini kullanarak sorumlulukları farklı soyut sınıflara ayırır.
+Yani, soyutlamalar ve gerçekleştirmeleri arasındaki bağımlılığın minimuma indirilmesi amacı ile kullanılır.
+
+Bridge Pattern, genellikle aşağıdaki durumlarda kullanılır:
+
+Bir ana soyut sınıfın temel kuralları tanımlamasını ve somut sınıfların ek kurallar eklemesini istediğimizde.
+Bir soyut sınıfın, nesnelere bir referansı olduğunda ve bu soyut metotlar her bir somut sınıfta tanımlanacağında2.

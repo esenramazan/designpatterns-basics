@@ -1,0 +1,40 @@
+
+
+*** SOLID prensipleri, sadece POJO (Plain Old Java Object) sınıfları için değil, genel olarak tüm yazılım geliştirme
+süreçlerinde kullanılabilir. Servis sınıflarınızda binlerce farklı işlem yapıyor olmanız,
+bu prensiplerin uygulanabilirliğini etkilemez.
+
+Özellikle Single Responsibility Principle (SRP), bir sınıfın yalnızca bir işlevi olması gerektiğini belirtir.
+Ancak bu, bir servis sınıfının yalnızca bir işlem yapması gerektiği anlamına gelmez.
+Aslında, bir servis sınıfı birden çok işlemi yönetebilir, ancak her işlem genellikle ayrı bir metot tarafından yönetilir.
+ Bu metotlar, genellikle belirli bir işlevsellikle ilgili olan ve bu işlevselliği yönetmek için birlikte çalışan bir dizi işlemi temsil eder.
+
+Örneğin, bir OrderService sınıfınız varsa, bu sınıf createOrder(), updateOrder(), deleteOrder() gibi metotları içerebilir.
+Her biri, siparişle ilgili belirli bir işlevi yerine getirir. Bu durumda, OrderService sınıfının sorumluluğu,
+sipariş işlemlerini yönetmektir ve bu, Single Responsibility Principle’ye uygundur.
+
+Ancak, eğer OrderService sınıfınız aynı zamanda müşteri bilgilerini güncelliyor,
+envanteri kontrol ediyor ve ödeme işlemlerini yönetiyorsa, bu durumda SRP’yi ihlal ediyor olabilirsiniz.
+Bu tür durumlarda, bu işlevleri kendi servis sınıflarına ayırmak daha uygun olabilir.
+
+Sonuç olarak, SOLID prensipleri, yazılımın esnek, sürdürülebilir, okunabilir ve yeniden kullanılabilir olmasını sağlamak için tasarlanmıştır.
+Bu prensipler, kodun anlaşılır, esnek ve sürdürülebilir olmasını sağlar.
+Bu nedenle, bu prensipler genellikle yazılım geliştirme sürecinde, sınıf tasarımından, metot organizasyonuna kadar birçok alanda uygulanır
+
+
+***Single Responsibility Principle (SRP) uygulanırken bazen belirsizlikler olabilir ve bu genellikle bakış açısına bağlıdır.
+Bir sınıfın “sorumluluğu” kavramı, çoğu zaman belirli bir duruma ve kişinin bakış açısına bağlıdır.
+
+ Örneğin, bir OrderService sınıfınız varsa ve bu sınıf, sipariş oluşturma, güncelleme ve silme işlemlerini yönetiyorsa,
+ bu üç işlevi “sipariş yönetimi” olarak tek bir sorumluluk altında gruplayabilirsiniz.
+ Ancak, başka bir bakış açısından, bu üç işlevin her biri ayrı bir sorumluluk olarak görülebilir ve
+ her biri için ayrı bir sınıf oluşturulabilir.
+
+ Bu nedenle, SRP’yi uygularken, hangi işlevlerin bir arada gruplandırılması gerektiğine ve hangi işlevlerin ayrılması
+ gerektiğine dair kararlar genellikle belirli bir duruma ve geliştiricinin bakış açısına bağlıdır.
+ Bu kararlar, genellikle kodun okunabilirliği, bakımı ve genişletilebilirliği gibi faktörlere dayanır.
+
+ Sonuç olarak, SOLID prensipleri genel bir kılavuz sağlar,
+ ancak her durumda kesin kurallar olarak kabul edilmemelidir.
+ Bunlar, yazılımın esnek, sürdürülebilir, okunabilir ve yeniden kullanılabilir olmasını sağlamak için tasarlanmıştır.
+ Ancak, her durumda en iyi uygulamanın ne olduğunu belirlemek genellikle belirli bir duruma ve geliştiricinin deneyimine bağlıdır.
